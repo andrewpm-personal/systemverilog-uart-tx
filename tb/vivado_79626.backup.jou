@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Thu Jun 25 10:54:57 2026
+# Process ID: 79626
+# Current directory: /home/apm18/systemverilog-uart-tx/tb
+# Command line: vivado
+# Log file: /home/apm18/systemverilog-uart-tx/tb/vivado.log
+# Journal file: /home/apm18/systemverilog-uart-tx/tb/vivado.jou
+# Running On: fastx4-26.ews.illinois.edu, OS: Linux, CPU Frequency: 2095.077 MHz, CPU Physical cores: 10, Host memory: 24925 MB
+#-----------------------------------------------------------
+start_gui
