@@ -3,8 +3,8 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Fri Jun 26 21:19:42 2026
-# Process ID: 167114
+# Start of session at: Fri Jun 26 20:41:40 2026
+# Process ID: 134312
 # Current directory: /home/apm18/systemverilog-uart-tx/tb
 # Command line: vivado
 # Log file: /home/apm18/systemverilog-uart-tx/tb/vivado.log
@@ -12,18 +12,17 @@
 # Running On: fastx4-02.ews.illinois.edu, OS: Linux, CPU Frequency: 2095.077 MHz, CPU Physical cores: 10, Host memory: 24925 MB
 #-----------------------------------------------------------
 start_gui
-open_project /home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.xpr
+create_project uart_tx /home/apm18/systemverilog-uart-tx/uart_tx -part xc7a200tfbg676-2
+set_property board_part xilinx.com:ac701:part0:1.4 [current_project]
+add_files -norecurse /home/apm18/systemverilog-uart-tx/rtl/counter.sv
 update_compile_order -fileset sources_1
 export_ip_user_files -of_objects  [get_files /home/apm18/systemverilog-uart-tx/rtl/counter.sv] -no_script -reset -force -quiet
 remove_files  /home/apm18/systemverilog-uart-tx/rtl/counter.sv
-export_ip_user_files -of_objects  [get_files /home/apm18/systemverilog-uart-tx/tb/tb_counter.sv] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 /home/apm18/systemverilog-uart-tx/tb/tb_counter.sv
-add_files -norecurse /home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv
+add_files -norecurse /home/apm18/systemverilog-uart-tx/rtl/counter.sv
 set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv
+add_files -fileset sim_1 -norecurse /home/apm18/systemverilog-uart-tx/tb/tb_counter.sv
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
 launch_simulation
-export_ip_user_files -of_objects  [get_files /home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv] -no_script -reset -force -quiet
-remove_files  /home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv
-add_files -norecurse /home/apm18/systemverilog-uart-tx/rtl/baud_tick_gen.sv
-launch_simulation
-source tb_baud_tick_gen.tcl
+source tb_counter.tcl
+close_sim

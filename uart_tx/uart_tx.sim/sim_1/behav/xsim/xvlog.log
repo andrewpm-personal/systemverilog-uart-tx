@@ -1,0 +1,2 @@
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/apm18/systemverilog-uart-tx/rtl/baud_tick_gen.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module baud_tick_gen
