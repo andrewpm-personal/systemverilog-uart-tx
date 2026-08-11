@@ -19,7 +19,7 @@ module tb_uart_tx;
         .data_in(data_in),
         .tx(tx),
         .busy(busy),
-        .done(done),
+        .done(done)
     );
 
     initial begin
