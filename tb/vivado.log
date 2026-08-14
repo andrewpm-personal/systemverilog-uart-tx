@@ -3,16 +3,15 @@
 # SW Build 3865809 on Sun May  7 15:04:56 MDT 2023
 # IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
 # SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
-# Start of session at: Sun Jul 12 22:06:39 2026
-# Process ID: 177201
+# Start of session at: Thu Aug 13 20:55:36 2026
+# Process ID: 164751
 # Current directory: /home/apm18/systemverilog-uart-tx/tb
 # Command line: vivado
 # Log file: /home/apm18/systemverilog-uart-tx/tb/vivado.log
 # Journal file: /home/apm18/systemverilog-uart-tx/tb/vivado.jou
-# Running On: fastx4-14.ews.illinois.edu, OS: Linux, CPU Frequency: 2095.077 MHz, CPU Physical cores: 10, Host memory: 24925 MB
+# Running On: fastx4-21.ews.illinois.edu, OS: Linux, CPU Frequency: 2095.077 MHz, CPU Physical cores: 10, Host memory: 24925 MB
 #-----------------------------------------------------------
 start_gui
-open_project /home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.xpr
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kc705:part0:1.6 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kc705/1.6/board.xml as part xc7k325tffg900-2 specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.6 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.6/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:kcu105:part0:1.7 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/kcu105/1.7/board.xml as part xcku040-ffva1156-2-e specified in board_part file is either invalid or not available
@@ -72,20 +71,14 @@ WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216:part0:2.0 availab
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu216ld:part0:2.0 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu216ld/production/2.0/board.xml as part xczu59dr-ffvf1760-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670:part0:2.0 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670/2.0/board.xml as part xczu67dr-fsve1156-2-i specified in board_part file is either invalid or not available
 WARNING: [Board 49-26] cannot add Board Part xilinx.com:zcu670ld:part0:1.0 available at /software/xilinx-2023.1/Vivado/2023.1/data/xhub/boards/XilinxBoardStore/boards/Xilinx/zcu670ld/1.0/board.xml as part xczu57dr-fsve1156-2-i specified in board_part file is either invalid or not available
+open_project /home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.xpr
 INFO: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.gen/sources_1'.
 Scanning sources...
 Finished scanning sources
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1704] No user IP repositories specified
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/software/xilinx-2023.1/Vivado/2023.1/data/ip'.
-open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 7975.254 ; gain = 314.461 ; free physical = 15617 ; free virtual = 27948
 update_compile_order -fileset sources_1
-export_ip_user_files -of_objects  [get_files /home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv] -no_script -reset -force -quiet
-remove_files  -fileset sim_1 /home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv
-set_property SOURCE_SET sources_1 [get_filesets sim_1]
-add_files -fileset sim_1 -norecurse /home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv
-update_compile_order -fileset sim_1
-update_compile_order -fileset sim_1
 launch_simulation
 Command: launch_simulation 
 INFO: [Vivado 12-12493] Simulation top is 'tb_uart_tx'
@@ -102,12 +95,53 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/apm18/systemverilog-uar
 INFO: [VRFC 10-311] analyzing module uart_tx
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module tb_uart_tx
-ERROR: [VRFC 10-8414] extra comma in port association list is not allowed [/home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv:23]
-ERROR: [VRFC 10-8530] module 'tb_uart_tx' is ignored due to previous errors [/home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv:3]
+Waiting for jobs to finish...
+No pending jobs, compilation finished.
 INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
-INFO: [USF-XSim-99] Step results log file:'/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.sim/sim_1/behav/xsim/xvlog.log'
-ERROR: [USF-XSim-62] 'compile' step failed with error(s). Please check the Tcl console output or '/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.sim/sim_1/behav/xsim/xvlog.log' file for more information.
-ERROR: [Vivado 12-4473] Detected error while running simulation. Please correct the issue and retry this operation.
-ERROR: [Common 17-39] 'launch_simulation' failed due to earlier errors.
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in '/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.sim/sim_1/behav/xsim'
+xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_tx_behav xil_defaultlib.tb_uart_tx xil_defaultlib.glbl -log elaborate.log
+Vivado Simulator v2023.1
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+Running: /software/xilinx-2023.1/Vivado/2023.1/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L uvm -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_uart_tx_behav xil_defaultlib.tb_uart_tx xil_defaultlib.glbl -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "/home/apm18/systemverilog-uart-tx/rtl/uart_tx.sv" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "/home/apm18/systemverilog-uart-tx/rtl/uart_tx.sv" Line 1. Module uart_tx doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.uart_tx
+Compiling module xil_defaultlib.tb_uart_tx
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_uart_tx_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in '/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "tb_uart_tx_behav -key {Behavioral:sim_1:Functional:tb_uart_tx} -tclbatch {tb_uart_tx.tcl} -view {/home/apm18/systemverilog-uart-tx/uart_tx/tb_uart_tx_behav.wcfg} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+open_wave_config /home/apm18/systemverilog-uart-tx/uart_tx/tb_uart_tx_behav.wcfg
+source tb_uart_tx.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+$finish called at time : 490 ns : File "/home/apm18/systemverilog-uart-tx/tb/tb_uart_tx.sv" Line 43
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'tb_uart_tx_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 8008.648 ; gain = 108.176 ; free physical = 14996 ; free virtual = 27856
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
 exit
-INFO: [Common 17-206] Exiting Vivado at Sun Jul 12 22:12:17 2026...
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 13 21:01:28 2026...

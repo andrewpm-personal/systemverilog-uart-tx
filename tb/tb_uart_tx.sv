@@ -32,26 +32,26 @@ module tb_uart_tx;
         rst = 1;
         start = 0;
         data_in = 0;
-        repeat (3) @(posedge clk);
+        repeat (3) @(negedge clk);
 
         rst = 0;
         data_in = 8'd6;
         start = 1;
-        repeat (1) @(posedge clk);
+        repeat (1) @(negedge clk);
         start = 0;
-        repeat (45) @(posedge clk);
+        repeat (45) @(negedge clk);
         $finish;
     end
 
     initial begin
         baud_tick = 0;
-        repeat (3) @(posedge clk);
+        repeat (3) @(negedge clk);
 
         forever begin
             baud_tick = 1;
-            repeat (1) @(posedge clk);
+            repeat (1) @(negedge clk);
             baud_tick = 0;
-            repeat (3) @(posedge clk);
+            repeat (3) @(negedge clk);
         end
     end
 endmodule
