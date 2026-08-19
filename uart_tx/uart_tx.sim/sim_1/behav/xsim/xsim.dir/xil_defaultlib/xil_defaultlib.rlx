@@ -1,9 +1,0 @@
-0.7
-2020.2
-May  7 2023
-15:10:42
-/home/apm18/systemverilog-uart-tx/rtl/baud_tick_gen.sv,1782526180,systemVerilog,,/home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv,,baud_tick_gen,,uvm,,,,,,
-/home/apm18/systemverilog-uart-tx/rtl/counter.sv,1782524906,systemVerilog,,/home/apm18/systemverilog-uart-tx/tb/tb_counter.sv,,counter,,uvm,,,,,,
-/home/apm18/systemverilog-uart-tx/tb/tb_baud_tick_gen.sv,1782526733,systemVerilog,,,,tb_baud_tick_gen,,uvm,,,,,,
-/home/apm18/systemverilog-uart-tx/tb/tb_counter.sv,1782524215,systemVerilog,,,,tb_counter,,uvm,,,,,,
-/home/apm18/systemverilog-uart-tx/uart_tx/uart_tx.sim/sim_1/behav/xsim/glbl.v,1683266558,verilog,,,,glbl,,uvm,,,,,,
